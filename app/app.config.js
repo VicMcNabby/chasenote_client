@@ -11,6 +11,9 @@
       .state('home', {
         url: '/',
         component: 'landingpage'
+      }).state('weather', {
+        url: '/weather',
+        component: 'weather'
       })
 
     $urlServiceProvider.rules.otherwise({

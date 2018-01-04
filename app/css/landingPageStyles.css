@@ -4,7 +4,29 @@
 }
 
 body {
-  background: #e5e5d7;
+  background: #bed5e0;
+}
+
+.logIn {
+  margin-bottom: 0;
+  margin-top: 3%;
+  margin-left: 87%;
+  margin-right: 2%;
+  border-radius: 2px;
+  padding: 3px 6px 3px 6px;
+  box-shadow: 1px 1px 1px #000;
+  color: #000;
+  background: #F8C0C8;
+  text-align: center;
+  font-family: 'norwester', sans-serif;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.logIn:hover {
+  background: #f9a4b1;
+  color: #1a4e60;
 }
 
 .headerTagline {
@@ -12,92 +34,160 @@ body {
   letter-spacing: 4px;
   text-align: center;
   font-weight: bolder;
-  color: #fffec4;
+  color: #BDBBB6;
   text-shadow: 2px 2px 2px #000;
+  margin: 0px;
 }
 
 .landingPage {
   min-height: 97vh;
   min-width: 96vw;
   border-radius: 2px;
-  /* border: 1px solid #000; */
+  border: 1px solid #F8C0C8;
   margin: 1% 2%;
   padding-top: 4px;
   padding-bottom: 20px;
-  box-shadow: 2px 2px 6px #111;
-  background: #748b91;
+  box-shadow: 4px 4px 10px #111;
+  background: #000b0f;
 }
 
-.landingPageHeaderBox {
+.headerBox {
   display: flex;
-  justify-content: center;
-  background: #084d6b;
-  box-shadow: 2px 2px 4px #222;
-  border-radius: 2px;
-  border: 6px #71a8b3 double;
+  flex-direction: column;
+  align-items: center;
   margin: 5px 20px 5px 20px;
 }
 
 .landingPageHeaderImage {
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   margin-top: 15px;
 }
 
 .landingPageHeader {
   font-family: 'norwester';
   color: #e8f6fc;
-  font-size: 80px;
-  text-shadow: 2px 2px 2px #000;
+  font-size: 70px;
+  text-shadow: 1px 1px 2px #000;
+  margin: 0px;
+}
+
+.headerImageLineBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headerImageLeftLine {
+  min-width: 120px;
+  border-bottom: 6px double #71a8b3;
+  margin-bottom: 15px;
+}
+
+.headerImageRightLine {
+  min-width: 120px;
+  border-bottom: 6px double #71a8b3;
+  margin-bottom: 15px;
+  margin-left: 7px;
 }
 
 .headerNote {
-  color: #71a8b3;
-  text-shadow: 2px 2px 2px #000;
+  color: #F8C0C8;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.headerBottomLine {
+  border-bottom: 6px double #71a8b3;
+  width: 320px;
+  margin-top: 10px;
+}
+
+.landingPageMainBox {
+  display: flex;
+  margin-top: 5%;
+  background: linear-gradient(#114151, #000, #114151);
+  padding: 20px 0px;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 4px;
+  width: 94%;
+  border-top: 1px solid #F8C0C8;
+  border-bottom: 1px solid #F8C0C8;
+}
+
+.chasenoteInfoBox {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.chasenoteInfo {
+  width: 65%;
+  color: #e8f6fc;
+  font-family: 'Oswald', serif;
+  text-align: center;
 }
 
 .landingPageMenuBox {
-  margin-top: 5%;
-  columns: 3;
-  width: 75%;
-  padding-left: 15px;
-  padding-right: 15px;
-  background: #c7dbe8;
-  border-radius: 2px;
-  box-shadow: 1px 1px 4px #111;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.landingPageMenuInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 16%;
+}
+
+.menuImageHeader {
+  color: #e8f6fc;
+  font-family: 'norwester';
+  text-shadow: 2px 2px 2px #000;
+}
+
+.menuImageDescription {
+  color: #e8f6fc;
+  margin: 15px;
+  text-align: center;
+  font-family: 'Oswald', serif;
 }
 
 .landingPageMenuImage {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin: 15px 0 15px 0;
-  /* border: 1px solid #444; */
-  border-radius: 2px;
-  box-shadow: 2px 2px 4px #111;
+  width: 90px;
+  height: 90px;
+  border-radius: 10%;
+  box-shadow: 3px 3px 3px #000;
+  border: 1px solid #e8f6fc;
+  margin-bottom: 10px;
 }
 
 .landingPageMenuImage:hover {
-  box-shadow: none;
-  border-right: 1px solid #444;
-  border-bottom: 1px solid #444;
+  box-shadow: 2px 2px 1px #ff516a;
+  border: 1px solid #ff516a;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-  .landingPageMenuBox {
-    columns: 2;
-  }
-}
+@media only screen and (max-width: 800px) {}
 
-@media only screen and (max-width: 600px) {
-  .landingPageHeaderImage {
-    display: none;
-  }
-  .landingPageHeader {
-    font-size: 60px;
-  }
+@media only screen and (max-width: 750px) {
   .landingPageMenuBox {
-    columns: 1;
+    display: block;
+  }
+  .landingPageMenuInfoBox {
+    /* border-top: 8px double #71a8b3; */
+    margin: 15px;
+    padding-top: 15px;
+    background: #001526;
+    border-top: 1px solid #F8C0C8;
+    border-bottom: 1px solid #F8C0C8;
+    border-radius: 4px;
+  }
+  .logIn {
+    margin-left: 80%;
+  }
+  .landingPageMenuImage {
+    width: 175px;
+    height: 175px;
   }
 }

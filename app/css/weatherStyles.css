@@ -1,0 +1,11 @@
+.weatherPage {
+  min-height: 97vh;
+  min-width: 96vw;
+  border-radius: 2px;
+  border: 1px solid #F8C0C8;
+  margin: 1% 2%;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  box-shadow: 4px 4px 10px #111;
+  background: #000b0f;
+}
