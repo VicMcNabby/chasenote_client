@@ -102,18 +102,6 @@ body {
   margin-top: 10px;
 }
 
-.landingPageMainBox {
-  display: flex;
-  margin-top: 5%;
-  background: linear-gradient(#114151, #000, #114151);
-  padding: 20px 0px;
-  box-shadow: 2px 2px 4px #000;
-  border-radius: 4px;
-  width: 94%;
-  border-top: 1px solid #F8C0C8;
-  border-bottom: 1px solid #F8C0C8;
-}
-
 .chasenoteInfoBox {
   display: flex;
   margin-top: 5%;
@@ -130,7 +118,14 @@ body {
 .landingPageMenuBox {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  margin-top: 5%;
+  background: linear-gradient(#114151, #000, #114151);
+  padding: 20px 0px;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 4px;
+  width: 94%;
+  border-top: 1px solid #F8C0C8;
+  border-bottom: 1px solid #F8C0C8;
 }
 
 .landingPageMenuInfoBox {
