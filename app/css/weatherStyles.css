@@ -24,7 +24,7 @@
 }
 
 .weatherForm {
-  width: 50%;
+  width: 40%;
   margin: auto;
   font-family: 'Oswald', serif;
 }
@@ -37,8 +37,88 @@
   text-shadow: 1px 1px 2px #000;
 }
 
+.weatherCity {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', serif;
+}
+
+.weatherCityInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weatherDetailsBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  background: linear-gradient(#114151, #000, #114151);
+  padding: 20px 0px;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 4px;
+  width: 94%;
+  border-top: 1px solid #F8C0C8;
+  border-bottom: 1px solid #F8C0C8;
+}
+
+.weatherDayBox {
+  min-width: 25%;
+  text-align: center;
+}
+
+.weatherDate {
+  color: #fff;
+  font-family: 'Oswald', serif;
+}
+
+.weatherCondition {
+  color: #fff;
+  font-family: 'Oswald', serif;
+}
+
+.weatherHigh, .weatherLow {
+  color: #fff;
+  font-family: 'norwester', serif;
+}
+
+.moreInfoButton {
+  border-radius: 4px;
+  width: 35%;
+  background: #114151;
+  border: 1px solid #F8C0C8;
+}
+
+.moreInfoButton:hover {
+  background: #1d5863;
+}
+
+.moreInfoLink {
+  color: #fff;
+  font-family: 'Oswald', serif;
+}
+
+.moreInfoLink:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media only screen and (max-width: 750px) {
   .weatherForm {
     width: 80%;
+  }
+  .weatherDetailsBox {
+    display: block;
+  }
+  .weatherDayBox {
+    margin: 15px;
+    padding-top: 15px;
+    background: #001526;
+    border-top: 1px solid #F8C0C8;
+    border-bottom: 1px solid #F8C0C8;
+    border-radius: 4px;
+  }
+  .moreInfoButton {
+    width: 65%;
   }
 }

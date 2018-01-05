@@ -1,0 +1,36 @@
+.sportsPage {
+  min-height: 97vh;
+  min-width: 96vw;
+  border-radius: 2px;
+  border: 1px solid #F8C0C8;
+  margin: 1% 2%;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  box-shadow: 4px 4px 10px #111;
+  background: #000b0f;
+}
+
+.sportsHeaderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 20px 5px 20px;
+}
+
+.sportsHeaderImage {
+  width: 190px;
+  height: 190px;
+}
+
+.sportsDetailsBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  background: linear-gradient(#114151, #000, #114151);
+  padding: 20px 0px;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 4px;
+  width: 94%;
+  border-top: 1px solid #F8C0C8;
+  border-bottom: 1px solid #F8C0C8;
+}

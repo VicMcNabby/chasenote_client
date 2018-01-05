@@ -3,12 +3,12 @@
     <div class="headerImageLineBox">
       <div class="headerImageLeftLine">
       </div>
-      <img class="landingPageHeaderImage" src="app/images/ChaseNoteClipboard3.png" />
+      <img class="landingPageHeaderImage" src="app/images/ChaseNoteClipboard3.png" ui-sref="home" />
       <div class="headerImageRightLine">
       </div>
     </div>
-    <h1 class="landingPageHeader">CHASE<span class="headerNote">NOTE</span></h1>
-    <h4 class="headerTagline">
+    <h1 ui-sref="home" class="landingPageHeader">CHASE<span class="headerNote">NOTE</span></h1>
+    <h4 class="headerTagline" ui-sref="home">
         ORGANIZATION APP
       </h4>
     <div class="headerBottomLine">
@@ -16,12 +16,22 @@
     <img class="weatherHeaderImage" src="app/images/ChaseNoteWeather.png">
   </div>
   <form class="input-group weatherForm">
-    <input type="text" class="form-control" placeholder="Enter zipcode...">
+    <input ng-model="$ctrl.zipcode" type="text" class="form-control" placeholder="Enter zipcode...">
     <span class="input-group-btn">
-      <button class="btn btn-primary weatherPageButton" type="submit">Get Weather</button>
+      <button ng-click="$ctrl.getWeather()" class="btn btn-primary weatherPageButton" type="submit">Get Weather</button>
     </span>
   </form>
-  <div class="container landingPageMenuBox">
-
+  <div class="weatherCityInfo" ng-show="$ctrl.showData">
+    <h3 class="weatherCity">{{$ctrl.city}}, {{$ctrl.state}}</h3>
+    <button class="btn moreInfoButton"><a class="moreInfoLink" target="_blank" href={{$ctrl.link}}>Detailed Forecast</a></button>
+  </div>
+  <div class="container weatherDetailsBox" ng-show="$ctrl.showData">
+    <div class="weatherDayBox" ng-repeat="day in $ctrl.weather">
+      <h4 class="weatherDate">{{day.date.weekday_short}}, {{day.date.monthname_short}} {{day.date.day}}</h4>
+      <h5 class="weatherHigh">High: <span style="color:#F7B2AD; font-size:24px;">{{day.high.fahrenheit}}</span></h5>
+      <img class="weatherIcon" src="{{day.icon_url}}" />
+      <h4 class="weatherCondition">{{day.conditions}}</h4>
+      <h5 class="weatherLow">Low: <span style="color:#42f4dc; font-size:24px;">{{day.low.fahrenheit}}</span></h5>
+    </div>
   </div>
 </div>
