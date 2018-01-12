@@ -29,6 +29,141 @@ body {
   color: #1a4e60;
 }
 
+.signUpHeader {
+  text-align: center;
+  color: #e8f6fc;
+  font-family: 'norwester', sans-serif;
+}
+
+/* /////////////  modal  ////////////// */
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.submitButtonBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.submitButton {
+  margin-top: 30px;
+  box-shadow: 1px 1px 0px #333;
+  background: #083c63;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 1px;
+  width: 80%;
+}
+
+.submitButton:hover {
+  box-shadow: none;
+  background: #042742;
+}
+
+.modalBody {
+  width: 310px;
+  background: #dce7ea;
+  border-radius: 2px;
+  color: #000;
+}
+
+.errorMessage {
+  color: #db0000;
+  text-align: center;
+  z-index: 3;
+}
+
+.modalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.modalFormInputBox {
+  width: 98%;
+}
+
+.modal-title {
+  text-align: center;
+  max-width: 50%;
+  position: fixed;
+  color: #042742;
+  font-family: 'norwester', sans-serif;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: none;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.modalInput {
+  width: 265px;
+}
+
+.closeModal {
+  margin-left: 90%;
+}
+
+/* /////////////  END modal  ////////////// */
+
+/* //////////////// new user form ///////////// */
+
+.newUserFormBox {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+  background: linear-gradient(#114151, #000, #114151);
+  padding: 20px 0px;
+  border-radius: 4px;
+  width: 55%;
+  border-top: 1px solid #F8C0C8;
+  border-bottom: 1px solid #F8C0C8;
+}
+
+.newUserForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+.newUserSubmitButtonBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* .newUserInput {
+  width: 265px;
+} */
+
+.newUserSubmitButton {
+  width: 100%;
+  border-radius: 1px;
+  background: #b77b83;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 1px 1px 1px #000;
+  /* letter-spacing: 2px; */
+}
+
+.newUserSubmitButton:hover {
+  background: #724b50;
+}
+
+/* //////////////// END new user form ///////////// */
+
 .headerTagline {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
@@ -132,7 +267,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 16%;
+  min-width: 33%;
 }
 
 .menuImageHeader {
@@ -158,8 +293,8 @@ body {
 }
 
 .landingPageMenuImage:hover {
-  box-shadow: 2px 2px 1px #ff516a;
-  border: 1px solid #ff516a;
+  box-shadow: 1px 1px 16px #EEF0F2;
+  border: 1px solid #EEF0F2;
   cursor: pointer;
 }
 
@@ -184,5 +319,8 @@ body {
   .landingPageMenuImage {
     width: 175px;
     height: 175px;
+  }
+  .newUserFormBox {
+    width: 75%;
   }
 }
